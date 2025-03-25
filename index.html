@@ -1,0 +1,234 @@
+'<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyllua Husein Hamad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        /* Classe para travar a rolagem quando o formulário estiver aberto */
+        body.form-open {
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            min-height: 100%;
+        }
+        .image-left, .image-right {
+            width: 30%;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+        .image-left {
+            background-image: url('/opcao-2.jpg');
+        }
+        .image-right {
+            background-image: url('/foto-Hyllua.jpg');
+        }
+        .content {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-y: auto; /* Permite rolagem vertical dentro do conteúdo */
+        }
+        .top-section, .bottom-section {
+            width: 100%;
+            padding: 30px 35px;
+            min-height: 50vh; /* Altura mínima para cada seção */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .top-section {
+            background-color: #590725;
+            color: white;
+            text-align: left;
+        }
+        .top-section h1, .top-section p {
+            text-align: left;
+        }
+        .top-section h1, .bottom-section h1 {
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        .top-section p, .bottom-section p {
+            padding: 10px;
+            font-size: 15px;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        .top-section button {
+    background-color: #44051c;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 40px;
+    align-self: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.3s ease; /* Adiciona a transição suave ao botão */
+}
+
+.bottom-section {
+    background-color: white;
+    color: black;
+    text-align: right;
+}
+
+.top-section button img {
+    width: 40px;
+    transition: transform 0.3s ease; /* Transição suave para o movimento da imagem */
+}
+
+.top-section button:hover img {
+    transform: translateX(30px); /* Move a imagem 10px para a direita quando o botão é hoverizado */
+}
+
+        
+        /* Estilo do formulário */
+        #formulario {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+   
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            body, html {
+                height: auto;
+                overflow-y: auto;
+            }
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+            .image-left, .image-right, .content {
+                width: 100%;
+                min-height: auto;
+            }
+            .image-left, .image-right {
+                height: 250px;
+            }
+            .content {
+                order: 2;
+            }
+            .image-left {
+                order: 1;
+            }
+            .image-right {
+                order: 3;
+            }
+            .top-section, .bottom-section {
+                min-height: auto;
+                padding: 30px 20px;
+            }
+            .top-section button {
+                padding: 15px 20px;
+                font-size: 20px;
+                margin-top: 30px;
+                width: 100%;
+            }
+            .bottom-section h1 {
+                margin-top: 10px;
+                font-weight: 400;
+            }
+
+            .top-section p, .bottom-section p {
+                padding: 10px;
+                font-size: 12px;
+                margin-top: 10px;
+                line-height: 1.5;
+            }
+
+            .top-section h1, .bottom-section h1 {
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-bottom: 20px;
+                font-size: 22px;
+            }
+            
+            /* Ajustes do formulário para mobile */
+            #formulario {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-left"></div>
+        <div class="content">
+            <div class="top-section">
+                <h1>Transforme sua beleza</h1>
+                <p>Descubra os melhores tratamentos estéticos com Hyllua Husein Hamad, uma especialista com mais de 8 anos de experiência na área. Oferecemos soluções personalizadas para realçar sua beleza de maneira natural e harmoniosa. Com uma abordagem focada no bem-estar e nos resultados duradouros, você vai se sentir mais confiante e radiante. Agende uma consulta e comece sua transformação com os cuidados mais avançados e exclusivos do mercado.</p>
+
+                <button onclick="openForm()">Iniciar Pesquisa <img src="/icons8-seta-longa-à-direita-100.png" alt=""></button>
+                <div id="formulario">
+                    
+                    <div data-tf-live="01JQ5GGTN5NN8ZYRF71VVW3A7T"></div>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <h1>SOBRE MIM</h1>
+                <p><strong>Hyllua Husein Hamad</strong>, 8 anos atuando na estética, biomédica com mais de 3 especializações internacionais, professora e mentora.</p>
+                <p><strong>+180</strong> alunos em turmas VIP<br><strong>+3000</strong> pacientes atendidos</p>
+                <p>Referência nacional em lábios e rinomodelação com a técnica LAPIDARE.</p>
+                <p>Empresária, CEO do instituto Hyllua Husein e da marca nacional de dermocosméticos Hyllua Beauty.</p>
+            </div>
+        </div>
+        <div class="image-right"></div>
+    </div>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    <script>
+        function openForm() {
+            document.getElementById('formulario').style.display = 'block';
+            document.body.classList.add('form-open');
+            
+            // Salva a posição atual da rolagem
+            window.formScrollPosition = window.scrollY;
+        }
+        
+        function closeForm() {
+            document.getElementById('formulario').style.display = 'none';
+            document.body.classList.remove('form-open');
+            
+            // Restaura a posição da rolagem
+            window.scrollTo(0, window.formScrollPosition || 0);
+        }
+    </script>
+</body>
+</html>
