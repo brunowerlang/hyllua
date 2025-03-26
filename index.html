@@ -54,7 +54,7 @@
             min-height: 50vh; /* Altura mínima para cada seção */
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         
@@ -82,16 +82,16 @@
         }
 
          .bottom-section p {
-            padding: 10px 0px;
+            
             font-size: 13px;
-            margin-top: 10px;
+            
             line-height: 1.5;
         }
 
         .top-section p {
-            padding: 10px 0px;
+            
             font-size: 13px;
-            margin-top: 0px;
+            
             line-height: 1.5;
 
         }
@@ -100,6 +100,8 @@
             font-size: 15px !important;
             margin-top: 0px !important;
             padding-top: 0px !important;
+            font-weight: 400;
+            text-transform: none;
         }
 
 .exclusivo {
@@ -121,7 +123,7 @@ text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: -15px;
     align-self: center;
     width: 100%;
     display: flex;
@@ -227,6 +229,8 @@ text-transform: uppercase;
             font-size: 12px !important;
             margin-top: 0px !important;
             padding-top: 0px !important;
+            font-weight: 400;
+            text-transform: none;
         }
             .top-section h1, .bottom-section h1 {
                 text-transform: uppercase;
@@ -251,17 +255,17 @@ text-transform: uppercase;
         <div class="image-left"></div>
         <div class="content">
             <div class="top-section">
-                <h1>Uma nova fase está prestes a começar.</h1>
-                <p class="top-section_p">E você pode estar entre as primeiras a viver essa experiência.
-                </p>
+                <h1>Uma nova fase está prestes a começar.<br><p class="top-section_p">E você pode estar entre as primeiras a viver essa experiência.
+                </p></h1>
+                
                 <p>Estamos preparando algo inédito:<br> mais imersivo e mais transformador.</p>
  
                 <p>Será uma virada. Um novo ciclo, pensado para poucos.<br> Com turmas seletivas, poucas vezes ao ano.</p>
                 <p>As vagas serão extremamente limitadas. Somente quem estiver nesta lista terá acesso antecipado, prioridade nas inscrições e a oportunidade de fazer parte dessa nova jornada antes de todos.</p>
-                <p>Essa é a sua chance de viver algo único!</p>    
-                <p class="exclusivo">🔒 Acesso exclusivo para inscritos.</p>    
+                <p>Essa é a sua chance de viver algo único!<br><span class="exclusivo">🔒 Acesso exclusivo para inscritos.</span> </p>    
+                   
                     
-
+                
                 <button onclick="openForm()">Quero entrar na lista de espera <img src="/icons8-seta-longa-à-direita-100.png" alt=""></button>
                 <div id="formulario">
                     
@@ -270,7 +274,7 @@ text-transform: uppercase;
             </div>
             <div class="bottom-section">
                 <h1>SOBRE MIM</h1>
-                <p><strong>Hyllua Husein Hamad</strong><br>, 8 anos atuando na estética, biomédica com mais de 3 especializações internacionais,<br> professora e mentora.</p>
+                <p><strong>Hyllua Husein Hamad</strong>, <br>8 anos atuando na estética, biomédica com mais de 3 especializações internacionais,<br> professora e mentora.</p>
                 <p><strong>+180</strong> alunos em turmas VIP<br><strong>+3000</strong> pacientes atendidos</p>
                 <p>Referência nacional em lábios e rinomodelação<br> com a técnica LAPIDARE.</p>
                 <p>Empresária, CEO do instituto Hyllua Husein<br> e da marca nacional de dermocosméticos<br> Hyllua Beauty.</p>
